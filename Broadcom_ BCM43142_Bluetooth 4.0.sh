@@ -5,7 +5,7 @@ echo "checked on Zorin OS 18"
 
 echo "installing Required firmwares"
 
-sudo apt install firmware-b43-installer broadcom-sta-dkms 
+sudo apt install  broadcom-sta-dkms 
 sudo apt install bluez-firmware -y
 echo "Reloading Bluetooth"
 sudo systemctl restart bluetooth
@@ -23,3 +23,4 @@ sudo systemctl restart bluetooth
 echo "Check now if it's ok"
 bluetoothctl list
 bluetoothctl show
+
